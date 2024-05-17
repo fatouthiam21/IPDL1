@@ -20,8 +20,8 @@ function MoviesPage(){
                     {movies.map(movie =>{
                         return(
                             <tr key={movie.id}>
-                            <td class="border border-state-300">Movie</td>
-                            <td class="border border-state-300">Year</td>
+                            <td class="border border-state-300">{movie.title}</td>
+                            <td class="border border-state-300">{movie.releaseYear}</td>
                             </tr>
                         );
                     })}
